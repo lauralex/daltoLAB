@@ -6,6 +6,6 @@ The main python file will contain some sample code to output a color-corrected i
 ## Roadmap
 - [x] Simple prototype that implements the LAB color correction algorithm
 - [ ] Color correction algorithm enhancement. Also, some input prompts to facilitate the calibration phase.
-- [ ] LUT generation
+- [ ] LUT generation (probably using an identity HALD and converting the output HALD to a 3D LUT file)
 - [ ] ICC color profile generation, starting from previously generated LUT
 - [ ] Code cleanup
