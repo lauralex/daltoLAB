@@ -8,3 +8,4 @@ The main python file will contain some sample code to output a color-corrected i
 - [ ] Color correction algorithm enhancement. Also, some input prompts to facilitate the calibration phase.
 - [ ] LUT generation
 - [ ] ICC color profile generation, starting from previously generated LUT
+- [ ] Code cleanup
