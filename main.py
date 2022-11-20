@@ -1,4 +1,5 @@
 import math
+from pathlib import Path
 
 import colour
 import imageio.v3 as iio
@@ -58,12 +59,17 @@ def convert_image(image):
 
 def main():
     a = LAB.from_rgb(23, 200, 23, 0)
-    image_path = 'Ishihara_09.jpg'
+
+    image_path = Path('Neutral_25.png')
     my_image = iio.imread(image_path)
+
+    is_alpha_present = my_image.shape[2] > 3
+    if is_alpha_present:
+        my_image = np.delete(my_image, 3, 2)
 
     my_image_converted: np.ndarray = convert_image(my_image)
 
-    iio.imwrite(f'{image_path.removesuffix(".jpg")}_converted.jpg', my_image_converted, extension='.jpg')
+    iio.imwrite(f'{image_path.stem}_converted{image_path.suffix}', my_image_converted)
     hex_color = a.hex()
     print(hex_color)
 

@@ -2,3 +2,4 @@ imageio
 numpy
 colormath
 colour-science
+opencolorio
