@@ -60,7 +60,7 @@ def convert_image(image):
 def main():
     a = LAB.from_rgb(23, 200, 23, 0)
 
-    image_path = Path('Neutral_25.png')
+    image_path = Path('mammamia.png')
     my_image = iio.imread(image_path)
 
     is_alpha_present = my_image.shape[2] > 3
