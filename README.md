@@ -6,10 +6,10 @@ The main python file will contain some sample code to output a color-corrected i
 - Use the `main.py` and edit it to customize your LAB color correction logic
 - Apply the transformation to the hald image: `Neutral_25.png`
 - Upload the modified image to https://sirserch.github.io/lut-creator-js to get the LUT in .CUBE format
-- Use the [dwm_lut](https://github.com/lauralex/dwm_lut) program to apply the LUT to your monitor(s) (credits to the original author @ledoge)
+- Use the [dwm_lut](https://github.com/lauralex/dwm_lut) program to apply the LUT to your monitor(s) (credits to the original author [@ledoge](https://github.com/ledoge))
 
 ## Presets for Deuteranomaly
-You can use `deuteranomaly_emotive_to_.4.cube` or `deuteranomaly_emotive_to_.5.cube` if you want to apply a LUT color correction for deuteranomaly (many thanks to @EmotiveColor)
+You can use `deuteranomaly_emotive_to_.4.cube` or `deuteranomaly_emotive_to_.5.cube` if you want to apply a LUT color correction for deuteranomaly (many thanks to [@EmotiveColor](https://github.com/EmotiveColor))
 
 ## Roadmap
 - [x] Simple prototype that implements the LAB color correction algorithm
